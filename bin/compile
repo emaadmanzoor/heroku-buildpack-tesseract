@@ -30,6 +30,6 @@ then
 fi
 echo "Building runtime environment for tesseract-ocr"
 mkdir -p $BUILD_DIR/.profile.d
-echo "export PATH=\"$TESSERACT_OCR_DIR/bin:\$PATH\"" > $ENVSCRIPT
-echo "export LD_LIBRARY_PATH=\"$TESSERACT_OCR_DIR/lib:\$LD_LIBRARY_PATH\"" >> $ENVSCRIPT
+echo "export PATH=\"$TESSERACT_OCR_DIR/tesseract-ocr-3.02.02/bin:\$PATH\"" > $ENVSCRIPT
+echo "export LD_LIBRARY_PATH=\"$TESSERACT_OCR_DIR/tesseract-ocr-3.02.02/lib:$TESSERACT_OCR_DIR/leptonica-1.69/lib:\$LD_LIBRARY_PATH\"" >> $ENVSCRIPT
 echo "export TESSDATA_PREFIX=\"$TESSERACT_OCR_DIR/\"" >> $ENVSCRIPT
